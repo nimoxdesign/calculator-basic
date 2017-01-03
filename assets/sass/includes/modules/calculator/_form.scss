@@ -1,0 +1,26 @@
+button {
+    border:1px solid #8B97A2;
+    outline:0 none;
+    font-size:18px;
+    background-color: #eef3f7; // Old browsers
+    @include filter-gradient(#eef3f7, #d5dfea, vertical); // IE6-9
+    @include background-image(linear-gradient(top,  #eef3f7 0%,#d5dfea 100%));
+
+    &:hover, 
+    &:focus {
+        background-color: #eef3f7; // Old browsers
+        @include filter-gradient(#d5dfea, #eef3f7, vertical); // IE6-9
+        @include background-image(linear-gradient(top, #d5dfea 0%, #eef3f7 100%));
+    }
+}
+
+input {
+    background-color: #eef3f7; // Old browsers
+    @include filter-gradient(#d5dfea, #eef3f7, vertical); // IE6-9
+    @include background-image(linear-gradient(top, #d5dfea 0%, #eef3f7 100%));
+}
+
+.form-control {
+    width:100%;
+    padding:1rem;
+}

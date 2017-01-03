@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-zoom=1,user-scalable=yes" />
+
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/app.css" />
+</head>
+    
+<body>
+    <div id="page">
+        <div class="module calculator">
+            <div class="calculator__content">
+                <div class="calculator__header">
+                    <div class="calculator__module-actions">
+                        <button id="calculator-minimize" class="btn btn-calculator--minimize">_</button>
+                        <button id="calculator-maximize" class="btn btn-calculator--maximize">[_]</button>
+                        <button id="calculator-close" class="btn btn-calculator--close">X</button>
+                    </div>
+
+                    <div class="calculator__title">
+                        <img src="assets/img/calculator-flat.svg" class="calculator__icon" alt="calculator icon" />
+
+                        <h1 class="calculator__heading">Calculator</h1>
+                    </div>
+                </div>
+
+                <div class="calculator__body">
+                    <div class="calculator__screen">
+                        <div class="calculator__container--input">
+                            <input type="text" id="calculator-input" class="calculator__input form-control" value="" placeholder="0" />
+                        </div>
+                    </div>
+                    
+                    <div id="calculator-errors" class="calculator__errors">
+                        <p id="calculator-error" class="calculator__error"></p>
+                    </div>
+
+                    <div class="calculator__buttons">
+                        <!-- misc. -->
+                        <div class="calculator__container--button">
+                            <button class="btn btn-calculator--operator" data-value="/">
+                                /
+                            </button>
+                        </div>
+
+                        <!-- numbers -->
+                        <div class="calculator__container--button">
+                            <button class="btn btn-calculator--parenthesis" data-value=")">
+                                )
+                            </button>
+                        </div>
+                        <div class="calculator__container--button">
+                            <button class="btn btn-calculator--parenthesis" data-value="(">
+                                (
+                            </button>
+                        </div>
+                        <div class="calculator__container--button">
+                            <button id="calculator-clear" class="btn btn-calculator--clear" data-value="">
+                                C
+                            </button>
+                        </div>
+
+                        <!-- misc. -->
+                        <div class="calculator__container--button">
+                            <button class="btn btn-calculator--operator" data-value="*">
+                                x
+                            </button>
+                        </div>
+
+                        <!-- numbers --> 
+                        <div class="calculator__container--button">
+                            <button class="btn btn-calculator--number" data-value="9">
+                                9
+                            </button>
+                        </div>
+                        <div class="calculator__container--button">
+                            <button class="btn btn-calculator--number" data-value="8">
+                                8
+                            </button>
+                        </div>
+                        <div class="calculator__container--button">
+                            <button class="btn btn-calculator--number" data-value="7">
+                                7
+                            </button>
+                        </div>
+
+                        <!-- misc. -->
+                        <div class="calculator__container--button">
+                            <button class="btn btn-calculator--operator" data-value="-">
+                                -
+                            </button>
+                        </div>
+
+                        <!-- numbers -->
+                        <div class="calculator__container--button">
+                            <button class="btn btn-calculator--number" data-value="6">
+                                6
+                            </button>
+                        </div>
+                        <div class="calculator__container--button">
+                            <button class="btn btn-calculator--number" data-value="5">
+                                5
+                            </button>
+                        </div>
+                        <div class="calculator__container--button">
+                            <button class="btn btn-calculator--number" data-value="4">
+                                4
+                            </button>
+                        </div>
+
+                        <!-- misc. -->
+                        <div class="calculator__container--button">
+                            <button class="btn btn-calculator--operator" data-value="+">
+                                +
+                            </button>
+                        </div>
+
+                        <!-- numbers -->
+                        <div class="calculator__container--button">
+                            <button class="btn btn-calculator--number" data-value="3">
+                                3
+                            </button>
+                        </div>
+                        <div class="calculator__container--button">
+                            <button class="btn btn-calculator--number" data-value="2">
+                                2
+                            </button>
+                        </div>
+                        <div class="calculator__container--button">
+                            <button class="btn btn-calculator--number" data-value="1">
+                                1
+                            </button>
+                        </div>
+
+                        <!-- misc. -->
+                        <div class="calculator__container--button" data-value="">
+                            <button id="calculator-process" class="btn btn-calculator--process-input" data-value="">
+                                =
+                            </button>
+                        </div>
+                        <div class="calculator__container--button">
+                            <button class="btn btn-calculator--seperator" data-value=".">
+                                ,
+                            </button>
+                        </div>
+
+                        <!-- numbers --> 
+                        <div class="calculator__container--button-large">
+                            <button class="btn btn-calculator--number" data-value="0">
+                                0
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="calculator__footer"></div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script type="text/javascript" src="assets/js/Calculator.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+</html>

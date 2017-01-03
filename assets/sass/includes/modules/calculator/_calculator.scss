@@ -1,0 +1,34 @@
+.calculator {
+    font-family:sans-serif;
+    width:30rem;
+    margin:1rem auto;
+    overflow:auto;
+    padding:0 .75rem .75rem;
+    border-radius:8px;
+    box-shadow:0 0 15px 1px #000000;
+
+    background-color: rgba(#b5bdc8, $calculator__opacity);
+    @include filter-gradient(rgba($calculator__background--light, $calculator__opacity), rgba($calculator__background--dark, $calculator__opacity), vertical); // IE6-9
+    @include background-image(linear-gradient(top, rgba($calculator__background--light, $calculator__opacity) 0%, rgba($calculator__background--midtone, $calculator__opacity) 36%, rgba($calculator__background--dark, $calculator__opacity) 100%));
+    
+    &.is-minimized {
+        .calculator__body {
+            display:none;
+        }
+    }
+    
+    &.is-maximized {
+        width:62rem;
+    }
+    
+    &.is-closed {
+        display:none;
+    }
+    
+    @import
+        'header',
+        'body',
+        'form',
+        'footer'
+    ;
+}

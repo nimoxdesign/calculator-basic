@@ -1,0 +1,19 @@
+html,
+body {
+    width:100%;
+    height:100%;
+}
+
+body {
+    text-align:center;
+    font-size:16px;
+    background-color: #bfd255; // Old browsers
+    @include filter-gradient(#bfd255, #9ecb2d, horizontal); // IE6-9 fallback on horizontal gradient
+    @include background-image(linear-gradient(left top,  #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%));
+
+    
+    * {
+        -webkit-border-box:border-box;
+        box-sizing:border-box;
+    }
+}
